@@ -7,7 +7,7 @@ const store = async (req, res) => {
 
     await post.save();
 
-    req.io.emit('post', post);
+    req.io.emit('like', post);
 
     return res.json(post);
 }

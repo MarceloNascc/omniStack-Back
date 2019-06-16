@@ -10,10 +10,10 @@ routes.get('/teste', (req, res) => {
 
 
 const PostController = require('./controllers/PostController');
-routes.get('/post', PostController.index);
+routes.get('/posts', PostController.index);
 routes.post('/post', upload.single('image'), PostController.store);
 
 const LikeController = require('./controllers/LikeController');
-routes.post('/posts/:id/like', LikeController.store);
+routes.post('/post/:id/like', LikeController.store);
 
 module.exports = routes;
