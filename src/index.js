@@ -24,4 +24,4 @@ app.use('/files', express.static(path.resolve(__dirname, '..', 'uploads', 'resiz
 
 app.use(require('./routes'));
 
-server.listen(5000, () => console.log('RODANDO NA PORTA 5000'));
+server.listen(process.env.PORT || 5000, () => console.log('RODANDO NA PORTA 5000'));
