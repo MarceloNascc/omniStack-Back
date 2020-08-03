@@ -8,7 +8,7 @@ const app = express();
 const server = require('http').Server(app);
 const io = require('socket.io')(server);
 
-mongoose.connect('mongodb+srv://sudo:viGwFzMFzEea3wtK@bases-3o7ol.mongodb.net/omniStack?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://sudo:minhasenha22@cluster0.3o7ol.mongodb.net/omnistack?retryWrites=true&w=majority', {
     useNewUrlParser: true
 });
 
